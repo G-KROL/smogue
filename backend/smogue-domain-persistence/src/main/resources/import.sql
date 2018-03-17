@@ -1,5 +1,6 @@
 -- --- AUTHOR Example
--- INSERT INTO "author" (id, city, created_by, created_on, first_name, last_name, street) VALUES(100,'London', current_user, localtimestamp, 'Arthur', 'Conan Doyle', 'Baker Street');
+INSERT INTO "subscribers" (id, active_user, email, email_sent, name, number) VALUES(1,FALSE , 'boban@gmail.com', TRUE , 'Artur', 103293475);
+
 --
 -- -- BOOK EXAMPLE
 -- INSERT INTO "item" (id, category, created_by, created_on, number_of_copies, publisher, publishing_date, title) VALUES (100, 'CRIMINAL', current_user, localtimestamp, 10, 'BBC Publisher', localtimestamp, 'Sherlock Holmes');
