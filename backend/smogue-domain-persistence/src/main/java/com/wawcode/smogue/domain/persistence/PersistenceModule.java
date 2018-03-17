@@ -8,9 +8,9 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @PropertySource({"classpath:application-persistence.properties"})
-@ComponentScan({"pl.altkom.asc.library.domain.persistence"})
-@EnableJpaRepositories("pl.altkom.asc.library.domain.persistence")
-@EntityScan(basePackages = {"pl.altkom.asc.library.domain.persistence"}, basePackageClasses = {Jsr310JpaConverters.class})
+@ComponentScan({"com.wawcode.smogue.domain.persistence"})
+@EnableJpaRepositories("com.wawcode.smogue.domain.persistence")
+@EntityScan(basePackages = {"com.wawcode.smogue.domain.persistence"}, basePackageClasses = {Jsr310JpaConverters.class})
 @Configuration
 public class PersistenceModule {
 

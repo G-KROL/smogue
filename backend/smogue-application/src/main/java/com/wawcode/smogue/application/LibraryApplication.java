@@ -5,7 +5,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
-@ComponentScan({"pl.altkom.asc.library"})
+@ComponentScan({"com.wawcode.smogue"})
 @PropertySource("classpath:application.properties")
 @SpringBootApplication
 public class LibraryApplication {
