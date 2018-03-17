@@ -99,7 +99,12 @@ footer a {
 }
 
 .navbar-brand {
-    background: url('img/')
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
 }
 
 /* Media Queries */
