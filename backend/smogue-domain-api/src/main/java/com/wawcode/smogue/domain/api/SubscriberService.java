@@ -8,4 +8,5 @@ public interface SubscriberService {
 
     void sendConfirmationEmail(SubscriberDto subscriber) throws EmailException, MalformedURLException;
     void sendSmsNewsletter(String email);
+    void readFromStation();
 }

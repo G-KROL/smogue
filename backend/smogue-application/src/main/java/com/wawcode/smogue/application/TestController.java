@@ -19,8 +19,8 @@ public class TestController {
 
     @RequestMapping(value = "/ready", method = RequestMethod.GET)
     public @ResponseBody
-    String getBookDetails() {
-        return "ready";
+    void getBookDetails() {
+        subscriberService.readFromStation();
     }
 
     @PostMapping(value = "/register")

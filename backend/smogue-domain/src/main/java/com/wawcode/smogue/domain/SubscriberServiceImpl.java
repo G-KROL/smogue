@@ -1,5 +1,7 @@
 package com.wawcode.smogue.domain;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
@@ -31,7 +33,7 @@ public class SubscriberServiceImpl implements SubscriberService {
         email.setSSLOnConnect(true);
         email.setFrom("infosmogwaw@gmail.com");
         email.setSubject("Confirm subscription");
-        email.setMsg("CLICK THE LINK http://localhost:8081/api/email-confirmed?email="+subscriberDto.getEmail()); //TODO Message
+        email.setMsg("Aby dokończyć rejestrację http://localhost:8081/api/email-confirmed?email="+subscriberDto.getEmail());
         email.addTo(subscriberDto.getEmail());
         email.send();
 
@@ -50,7 +52,8 @@ public class SubscriberServiceImpl implements SubscriberService {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
         Message message = Message.creator(new PhoneNumber("+48"+subscriber.getNumber()), new PhoneNumber("+48732483483"),
-                "Tomorrow's forecast in Financial District, San Francisco is Clear").create(); //TODO Message
+                "Cześć "+subscriber.getName()+" dziękujemy za zaufanie. Stan powietrza dla Warszawy w dniu" +
+                        "dzisiejszym wynosi 60 PM2.5, zagrożenie jest na poziome średnim.").create(); //TODO Message
     }
 
     private void registerSubscriber(SubscriberDto subscriberDto){
@@ -67,5 +70,8 @@ public class SubscriberServiceImpl implements SubscriberService {
         subscriber.setEmailSent(false);
         subscriber.setActiveUser(true);
         subscriberRepository.save(subscriber);
+    }
+    public void readFromStation(){
+        Gson gson = new GsonBuilder().create();
     }
 }
