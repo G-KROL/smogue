@@ -37,30 +37,6 @@ nav.navbar-inverse #LOGIN {
     border: none;
 }
 
-.testimonial {
-    background: #222;
-}
-
-blockquote {
-    border: none;
-    margin: 0;
-    font-family: Georgia, Times, serif;
-    font-style: italic;
-    font-size: 32px;
-    color: white;
-}
-
-blockquote cite {
-    display: block;
-    text-align: right;
-    text-transform: uppercase;
-    font-family: Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: bold;
-    color: #888;
-    margin-top: 40px;
-}
 
 section {
     padding: 100px;
@@ -80,11 +56,12 @@ h2 + p {
 }
 
 #team {
-    background: url('img/fan.jpg') top left no-repeat;
+    background: url('img/smog.jpeg') top left no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
 }
+
 
 footer {
     background: #222;
@@ -95,7 +72,7 @@ footer {
 }
 
 footer a {
-    color: hotpink;
+    color: #c21212;
 }
 
 .navbar-brand {
@@ -105,6 +82,25 @@ footer a {
   height: 100%;
   padding: 15px;
   width: auto;
+}
+
+.btn {
+    border: none; /* Remove borders */
+    color: #9b9999; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    border-radius: 0;
+}
+
+.danger {background-color: #c21212;} /* Red */ 
+.danger:hover {background: #c21212; color: white}
+
+#widget {
+    max-width:180px;
+    text-align:center;
+    font-size:30px;
+    height:60px;
+    padding-top:30px;
 }
 
 /* Media Queries */
