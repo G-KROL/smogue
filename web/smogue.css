@@ -37,6 +37,30 @@ nav.navbar-inverse #LOGIN {
     border: none;
 }
 
+.testimonial {
+    background: #222;
+}
+
+blockquote {
+    border: none;
+    margin: 0;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    font-size: 32px;
+    color: white;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    color: #888;
+    margin-top: 40px;
+}
 
 section {
     padding: 100px;
@@ -56,12 +80,11 @@ h2 + p {
 }
 
 #team {
-    background: url('img/smog.jpeg') top left no-repeat;
+    background: url('img/fan.jpg') top left no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
 }
-
 
 footer {
     background: #222;
@@ -72,7 +95,7 @@ footer {
 }
 
 footer a {
-    color: #c21212;
+    color: hotpink;
 }
 
 .navbar-brand {
@@ -82,25 +105,6 @@ footer a {
   height: 100%;
   padding: 15px;
   width: auto;
-}
-
-.btn {
-    border: none; /* Remove borders */
-    color: #9b9999; /* Add a text color */
-    padding: 14px 28px; /* Add some padding */
-    cursor: pointer; /* Add a pointer cursor on mouse-over */
-    border-radius: 0;
-}
-
-.danger {background-color: #c21212;} /* Red */ 
-.danger:hover {background: #c21212; color: white}
-
-#widget {
-    max-width:180px;
-    text-align:center;
-    font-size:30px;
-    height:60px;
-    padding-top:30px;
 }
 
 /* Media Queries */
@@ -114,7 +118,80 @@ footer a {
     }
     
 }
-
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+.modal-login {
+    color: #636363;
+    width: 350px;
+}
+.modal-login .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.modal-login .modal-header {
+    border-bottom: none;
+    position: relative;
+    justify-content: center;
+}
+.modal-login h4 {
+    text-align: center;
+    font-size: 26px;
+}
+.modal-login  .form-group {
+    position: relative;
+    width: 100%;
+}
+.modal-login i {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    font-size: 18px;
+}
+.modal-login .form-control {
+    padding-left: 40px;
+}
+.modal-login .form-control:focus {
+    border-color: #c11111;
+}
+.modal-login .form-control, .modal-login .btn {
+    min-height: 40px;
+    border-radius: 3px; 
+}
+.modal-login .hint-text {
+    text-align: center;
+    padding-top: 10px;
+}
+.modal-login .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.modal-login .btn {
+    background: #c11111;
+    border: none;
+    line-height: normal;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+    background: #c11111;
+}
+.modal-login .modal-footer {
+    background: #ecf0f1;
+    border-color: #dee4e7;
+    text-align: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+    justify-content: center;
+}
+.modal-login .modal-footer a {
+    color: #999;
+}
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
 
 
 
