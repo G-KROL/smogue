@@ -31,7 +31,7 @@ public class TestController {
     }
 
     @GetMapping(value = "/email-confirmed")
-    public ResponseEntity sendFirstSmsNewsletter(@PathVariable String email){
+    public ResponseEntity sendFirstSmsNewsletter(@RequestParam String email){
         subscriberService.sendSmsNewsletter(email);
 
         return new ResponseEntity(HttpStatus.CREATED);
