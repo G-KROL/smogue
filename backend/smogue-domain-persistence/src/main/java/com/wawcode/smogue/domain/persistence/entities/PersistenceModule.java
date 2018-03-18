@@ -1,4 +1,4 @@
-package com.wawcode.smogue.domain.persistence;
+package com.wawcode.smogue.domain.persistence.entities;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;

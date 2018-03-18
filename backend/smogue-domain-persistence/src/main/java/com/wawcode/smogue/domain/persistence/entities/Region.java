@@ -1,4 +1,4 @@
-package com.wawcode.smogue.domain.persistence;
+package com.wawcode.smogue.domain.persistence.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
