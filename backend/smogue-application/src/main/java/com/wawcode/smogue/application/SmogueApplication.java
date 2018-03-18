@@ -8,11 +8,11 @@ import org.springframework.context.annotation.PropertySource;
 @ComponentScan({"com.wawcode.smogue"})
 @PropertySource("classpath:application.properties")
 @SpringBootApplication
-public class LibraryApplication {
+public class SmogueApplication {
 
     public static void main(String[] args) {
         new SpringApplicationBuilder()
-                .sources(LibraryApplication.class)
+                .sources(SmogueApplication.class)
                 .run(args);
     }
 }
